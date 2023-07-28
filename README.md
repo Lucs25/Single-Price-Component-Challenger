@@ -31,8 +31,8 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- Solução URL: [Repo](https://github.com/Lucs25/Product-Preview-Card-Challenger)
-- Live Site URL: [Live site](https://product-preview-six-orcin.vercel.app/)
+- Solução URL: [Repo](https://github.com/Lucs25/Single-Price-Component-Challenger)
+- Live Site URL: [Live site](https://single-price-component-challenger.vercel.app/)
 
 # Tecnologias utilizadas:
 
