@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: hsl(179, 62%, 43%);
+	--secondary-color: hsl(71, 73%, 54%);
+	--primary-neutral-color: hsl(204, 43%, 93%);
+	--secondary-neutral-color: hsl(218, 22%, 67%);
+	--ff: 'Karla', sans-serif;
+	--fs: 1rem;
+	--fw-primary: 400;
+	--fw-secondary: 700;
+	--padding-title: 0 20px;
+	--margin-section: 20px 0;
+}
+
+body {
+	font-family: var(--ff);
+	background: var(--primary-neutral-color);
+}
+
+p {
+	font-size: var(--fs);
+}
+
+main {
+	display: grid;
+	grid-template-areas: 'join' 'subscription' 'why';
+	grid-template-rows: repeat(3, auto);
+	place-content: center center;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+.join {
+	background: #fff;
+	grid-area: join;
+	padding: var(--padding-title);
+	border-radius: 8px 8px 0px 0px;
+}
+
+.join h1 {
+	margin: var(--margin-section);
+	color: var(--primary-color);
+}
+
+.join h2 {
+	color: var(--secondary-color);
+	font-size: var(--fs);
+}
+
+.join p {
+	color: var(--secondary-neutral-color);
+	line-height: 1.5;
+	margin: var(--margin-section);
+}
+
+.subscription {
+	color: var(--primary-neutral-color);
+	background: var(--primary-color);
+	padding: var(--padding-title);
+}
+
+.subscription h1 {
+	margin: var(--margin-section);
+}
+
+.subscription p {
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+}
+
+.subscription p span {
+	color: var(--primary-neutral-color);
+	font-size: 2rem;
+	font-weight: var(--fw-secondary);
+	margin-right: 5px;
+	align-items: center;
+}
+
+.subscription button {
+	width: 100%;
+	padding: 15px;
+	border-radius: 8px;
+	border: none;
+	margin: var(--margin-section);
+	color: var(--primary-neutral-color);
+	background: var(--secondary-color);
+	font-weight: var(--fw-secondary);
+}
+
+.why {
+	grid-area: why;
+	background: hsl(179, 71%, 43%);
+	color: var(--primary-neutral-color);
+	padding: var(--padding-title);
+	border-radius: 0 0 8px 8px;
+}
+
+.why h1 {
+	margin: var(--margin-section);
+}
+
+.why p {
+	margin: var(--margin-section);
+	line-height: 1.5;
+	text-align: left;
+	width: 71%;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) {
+	main {
+		grid-template-areas: 'join join' 'subscription why';
+		width: 600px;
+		margin-top: 100px;
+	}
+	.subscription {
+		border-radius: 0 0 0 8px;
+	}
+
+	.why {
+		border-radius: 0 0 8px 0px;
+	}
+	.why p {
+		width: 90%;
+	}
+}
